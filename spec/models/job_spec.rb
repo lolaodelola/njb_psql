@@ -5,10 +5,10 @@ RSpec.describe Job, type: :model do
     describe 'columns' do
       it { should have_db_column(:title) }
     end
-    #
-    # describe 'validations' do
-    #   it { should validate_presence_of(:title) }
-    # end
+
+    describe 'validations' do
+      it { should validate_presence_of(:title) }
+    end
     #
     # describe 'associations' do
     #   it { should belong_to(:end_user).with_foreign_key('employer_id') }
