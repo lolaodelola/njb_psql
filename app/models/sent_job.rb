@@ -1,0 +1,2 @@
+class SentJob < ApplicationRecord
+end
