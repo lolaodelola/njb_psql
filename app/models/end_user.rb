@@ -3,4 +3,5 @@ class EndUser < ApplicationRecord
   belongs_to :city
   belongs_to :local_government_area, foreign_key: 'lga_id'
   has_many :sent_jobs
+  has_many :end_user_industries
 end

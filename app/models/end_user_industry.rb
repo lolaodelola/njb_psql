@@ -1,0 +1,2 @@
+class EndUserIndustry < ApplicationRecord
+end
