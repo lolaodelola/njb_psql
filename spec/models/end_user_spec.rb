@@ -11,7 +11,7 @@ RSpec.describe EndUser, type: :model do
 
     describe 'associations' do
       it { should belong_to(:city) }
-      # it { should belong_to(:local_government_area) }
+      it { should belong_to(:local_government_area) }
       # it { should have_many(:sent_jobs) }
       # it { should have_many(:industries) }
     end
