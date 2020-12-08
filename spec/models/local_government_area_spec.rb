@@ -9,11 +9,11 @@ RSpec.describe LocalGovernmentArea, type: :model do
     describe 'validations' do
       it { should validate_presence_of(:name) }
     end
-    #
-    # describe 'associations' do
-    #   it { should belongs_to(:city) }
-    #   it { should have_many(:end_users) }
-    #   it { should have_many(:jobs) }
-    # end
+
+    describe 'associations' do
+      it { should belong_to(:city) }
+      # it { should have_many(:end_users) }
+      # it { should have_many(:jobs) }
+    end
   end
 end
