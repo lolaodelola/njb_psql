@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe LocalGovernmentArea, type: :model do
   context 'model set up' do
-    # describe 'columns' do
-    #   it { should have_db_column(:name) }
-    # end
+    describe 'columns' do
+      it { should have_db_column(:name) }
+    end
     #
     # describe 'validations' do
     #   it { should validate_presence_of(:name) }
