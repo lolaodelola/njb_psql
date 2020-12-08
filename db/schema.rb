@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2020_12_07_083711) do
   create_table "end_users", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "first_name", default: ""
-    t.string "last_name", default: ""
-    t.string "phone_number", default: ""
-    t.string "twilio_uid", default: ""
+    t.string "first_name"
+    t.string "last_name"
+    t.string "phone_number"
+    t.string "twilio_uid"
   end
 
 end
