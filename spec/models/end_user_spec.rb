@@ -2,6 +2,13 @@ require 'rails_helper'
 
 RSpec.describe EndUser, type: :model do
   context 'model set up' do
+    describe 'columns' do
+      it { should have_db_column(:first_name) }
+      it { should have_db_column(:last_name) }
+      it { should have_db_column(:phone_number) }
+      it { should have_db_column(:twilio_uid) }
+    end
+
     describe 'validations' do
       it { should validate_presence_of(:first_name) }
       it { should validate_presence_of(:last_name) }
