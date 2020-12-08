@@ -14,7 +14,7 @@ RSpec.describe EndUser, type: :model do
       it { should belong_to(:local_government_area) }
       it { should have_many(:sent_jobs) }
       it { should have_many(:end_user_industries) }
-      # it { should have_many(:industries).through(:end_user_industries) }
+      it { should have_many(:industries).through(:end_user_industries) }
     end
   end
 end
