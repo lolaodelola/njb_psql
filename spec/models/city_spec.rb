@@ -13,7 +13,7 @@ RSpec.describe City, type: :model do
     describe 'associations' do
       it { should have_many(:local_government_areas) }
       it { should have_many(:end_users) }
-      # it { should have_many(:jobs) }
+      it { should have_many(:jobs) }
     end
   end
 end

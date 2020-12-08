@@ -3,4 +3,5 @@ class City < ApplicationRecord
 
   has_many :local_government_areas
   has_many :end_users
+  has_many :jobs
 end
