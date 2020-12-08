@@ -13,7 +13,7 @@ RSpec.describe LocalGovernmentArea, type: :model do
     describe 'associations' do
       it { should belong_to(:city) }
       it { should have_many(:end_users) }
-      # it { should have_many(:jobs) }
+      it { should have_many(:jobs).with_foreign_key('lga_id') }
     end
   end
 end
