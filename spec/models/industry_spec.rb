@@ -6,9 +6,9 @@ RSpec.describe Industry, type: :model do
       it { should have_db_column(:name) }
     end
 
-    # describe 'validations' do
-    #   it { should validate_presence_of(:name) }
-    # end
+    describe 'validations' do
+      it { should validate_presence_of(:name) }
+    end
     #
     # describe 'associations' do
     #   it { should have_many(:end_user_industries) }
