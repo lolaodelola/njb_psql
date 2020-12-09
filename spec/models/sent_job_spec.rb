@@ -12,7 +12,7 @@ RSpec.describe SentJob, type: :model do
 
     describe 'associations' do
       it { should belong_to(:end_user) }
-      # it { should belong_to(:jobs) }
+      it { should belong_to(:job) }
     end
   end
 end
