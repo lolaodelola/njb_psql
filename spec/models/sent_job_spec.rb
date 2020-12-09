@@ -9,10 +9,10 @@ RSpec.describe SentJob, type: :model do
     describe 'validations' do
       it { should validate_presence_of(:sent_at) }
     end
-    #
-    # describe 'associations' do
-    #   it { should belong_to(:end_user) }
-    #   it { should belong_to(:jobs) }
-    # end
+
+    describe 'associations' do
+      it { should belong_to(:end_user) }
+      # it { should belong_to(:jobs) }
+    end
   end
 end
