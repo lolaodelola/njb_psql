@@ -12,7 +12,7 @@ RSpec.describe Industry, type: :model do
 
     describe 'associations' do
       it { should have_many(:end_user_industries) }
-      # it { should have_many(:end_users).through(:end_user_industries) }
+      it { should have_many(:end_users).through(:end_user_industries) }
       # it { should have_many(:jobs) }
     end
   end
